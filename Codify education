@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Codify Education - Programming Language Learning</title> 
+  <link rel="stylesheet" href="styles.css"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&amp;display=swap" rel="stylesheet"> 
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      background-color: #ffcc80; /* Light orange background color */
+      color: #fff; /* White text color */
+      margin: 0;
+    }
+
+    header {
+      text-align: center;
+      background-color: #333; /* Dark header background color */
+      color: #ffcc80; /* Light text color for the header */
+      padding: 10px 0;
+    }
+
+    h1, h2, h3, h4 {
+      color: #fff; /* White titles */
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    nav a {
+      color: #ffcc80; /* Light orange color for navigation links */
+      text-decoration: none;
+    }
+
+    section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    form {
+      display: inline-block;
+      text-align: left;
+    }
+
+    form label {
+      display: block;
+      margin: 10px 0;
+      color: #333; /* Dark color for labels */
+    }
+
+    form input {
+      padding: 8px;
+      border: 1px solid #333; /* Dark border color for input fields */
+    }
+
+    form button {
+      background-color: #d32f2f; /* Dark red button color */
+      color: #ffcc80; /* Light text color for the button */
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #b71c1c; /* Dark red button color on hover */
+    }
+
+    footer {
+      background-color: #333; /* Dark footer background color */
+      color: #ffcc80; /* Light text color for the footer */
+      padding: 10px 0;
+    }
+
+    .course {
+      border: 1px solid #fff; /* White border color */
+      padding: 10px;
+      margin: 10px;
+      max-width: 300px;
+      display: inline-block;
+      text-align: left;
+      background-color: #ffcc80; /* Light orange course background color */
+    }
+  </style> 
+ </head> 
+ <body> 
+  <header> 
+   <h1>Codify Education - Programming Language Learning</h1> 
+   <nav> 
+    <ul> 
+     <li><a href="#home">Home</a></li> 
+     <li><a href="#courses">Courses</a></li> 
+     <li><a href="#about">About Us</a></li> 
+     <li><a href="#contact">Contact</a></li> 
+     <li><a href="#signin">Login</a></li> 
+     <li><a href="#signout">Sign Out</a></li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <section id="home"> 
+   <h2>Welcome to Codify Education</h2> 
+   <p>Unlock the world of programming languages with our AI-driven learning platform.</p> 
+   <form> <label for="email">Email:</label> 
+    <input type="email" id="email" name="email" required> <label for="password">Password:</label> 
+    <input type="password" id="password" name="password" required> <button type="submit">Sign In</button> 
+   </form> 
+  </section> 
+  <section id="courses"> 
+   <h2>Featured Courses</h2> 
+   <div class="course"> 
+    <h4>C Programming Course</h4> 
+    <p>Learn the basics and advanced concepts of C programming language.</p> <button type="button" onclick="showFreeNotes('C Programming Course')">Access Free Notes</button> 
+   </div> 
+   <div class="course"> 
+    <h4>C++ Programming Course</h4> 
+    <p>Explore the fundamentals and object-oriented programming in C++.</p> <button type="button" onclick="showFreeNotes('C++ Programming Course')">Access Free Notes</button> 
+   </div> 
+   <div class="course"> 
+    <h4>HTML Fundamentals</h4> 
+    <p>Master the essentials of HTML for web development.</p> <button type="button" onclick="showFreeNotes('HTML Fundamentals')">Access Free Notes</button> 
+   </div> 
+   <div class="course"> 
+    <h4>Python Programming Course</h4> 
+    <p>Learn Python, a versatile language for various applications.</p> <button type="button" onclick="showFreeNotes('Python Programming Course')">Access Free Notes</button> 
+   </div> 
+  </section> 
+  <section id="about"> 
+   <h2>About Us</h2> 
+   <p>Free notes and information</p> 
+  </section> 
+  <footer> 
+   <p>Â© 2024 Codify Education. All rights reserved.</p> 
+  </footer> 
+  <script src="script.js"></script> 
+  <script>
+    function showFreeNotes(courseName) {
+      alert('Free notes for ' + courseName + ' are available!'); // You can replace this with your specific action for accessing free notes.
+    }
+  </script> 
+ </body>
+</html>
